@@ -17,12 +17,16 @@ abstract class SymbolReplacer {
     }
 
     String replace() {
-        for (String symbolName = symbolMatcher.find() ? symbolMatcher.group(1) : null;
+        for (String symbolName = nextSymbol();
              symbolName != null;
-             symbolName = symbolMatcher.find() ? symbolMatcher.group(1) : null) {
+             symbolName = nextSymbol()) {
             replaceAllInstances(symbolName);
         }
         return stringToReplace;
+    }
+
+    private String nextSymbol() {
+        return symbolMatcher.find() ? symbolMatcher.group(1) : null;
     }
 
     private void replaceAllInstances(String symbolName) {

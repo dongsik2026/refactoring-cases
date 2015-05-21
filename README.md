@@ -100,3 +100,6 @@ symbolPattern, symbolMatcher를 field로 추출
 
 ### 7. Change while to for
 ![](https://api.monosnap.com/rpc/file/download?id=au3CPwAzkJjUqHWENJcc8YB26xY50G)
+
+### 8. Extract method: nextSymbol
+![](https://api.monosnap.com/rpc/file/download?id=xSXM4NMkocCjKKRkNYLCvhMadFFAmy)
