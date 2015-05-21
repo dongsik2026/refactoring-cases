@@ -97,3 +97,6 @@ symbolPattern, symbolMatcher를 field로 추출
 
 ### 6. Extract method: replaceSymbol
 ![](https://api.monosnap.com/rpc/file/download?id=Tbe5Dj9XNloQ63G1QoSRtM9gl6653F)
+
+### 7. Change while to for
+![](https://api.monosnap.com/rpc/file/download?id=au3CPwAzkJjUqHWENJcc8YB26xY50G)

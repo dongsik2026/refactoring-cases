@@ -17,8 +17,9 @@ abstract class SymbolReplacer {
     }
 
     String replace() {
-        while (symbolMatcher.find()) {
-            String symbolName = symbolMatcher.group(1);
+        for (String symbolName = symbolMatcher.find() ? symbolMatcher.group(1) : null;
+             symbolName != null;
+             symbolName = symbolMatcher.find() ? symbolMatcher.group(1) : null) {
             replaceAllInstances(symbolName);
         }
         return stringToReplace;
