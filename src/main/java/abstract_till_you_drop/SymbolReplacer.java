@@ -25,10 +25,14 @@ abstract class SymbolReplacer {
     }
 
     private void replaceAllInstances(String symbolName) {
-        if (getSymbol(symbolName) != null && !alreadyReplaced.contains(symbolName)) {
+        if (shouldReplaceSymbol(symbolName)) {
             alreadyReplaced.add(symbolName);
             stringToReplace = stringToReplace.replace("$" + symbolName, getSymbol(symbolName));
         }
+    }
+
+    private boolean shouldReplaceSymbol(String symbolName) {
+        return getSymbol(symbolName) != null && !alreadyReplaced.contains(symbolName);
     }
 
     abstract protected String getSymbol(String symbolName);

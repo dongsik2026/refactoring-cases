@@ -88,3 +88,9 @@ symbolPattern, symbolMatcher를 field로 추출
 큰 메소드를 작은 메소드를 extract하기 전의 사전 작업. 이 작업을 수행하면 extract method할 때 parameter로 전달할 필요가 없어진다.
 
 ![](https://api.monosnap.com/rpc/file/download?id=7kt24mePKPJ9fu9FQ77CaccQO4hjoc)
+
+### 4. Extract method: replaceAllInstances
+![](https://api.monosnap.com/rpc/file/download?id=V1h4JkqF7NA0qDFjHe8ZnlCakPqkxc)
+
+### 5. Extract method: shouldReplaceSymbol
+![](https://api.monosnap.com/rpc/file/download?id=eWaR2s1CW2TtEFTUoAUw9Hig3mKP3l)
