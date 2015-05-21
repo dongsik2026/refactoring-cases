@@ -8,7 +8,7 @@ import static org.junit.Assert.assertThat;
 public class SymbolReplacerTest {
     @Test
     public void foo() {
-        MyReplacer replacer = new MyReplacer("$ss aa $bb dd ff ss");
+        SymbolReplacer replacer = new SymbolReplacer("$ss aa $bb dd ff ss", new MyReplacer());
         assertThat(replacer.replace(), is("__ aa __ dd ff ss"));
     }
 }

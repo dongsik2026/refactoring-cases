@@ -110,3 +110,8 @@ symbolPattern, symbolMatcher를 field로 추출
 SymbolTranslator 클래스를 생성
 ![](https://api.monosnap.com/rpc/file/download?id=S74yJJcF0YxXnuPix8I2m4i6lFoirJ)
 ![](https://api.monosnap.com/rpc/file/download?id=plLLZOHkqgGuvGgB1Dbari0PSLqYuL)
+
+#### make it pass
+![](https://api.monosnap.com/rpc/file/download?id=Wwb3LBU1mL1F5FvDPzBd6KHNvbB6Uj)
+![](https://api.monosnap.com/rpc/file/download?id=D6XWjWjWc7IXOL4Rhq7sJUlN0vH4kL)
+![](https://api.monosnap.com/rpc/file/download?id=Tv94ScsSeZLbJiHUjRRn4jKCEFuHaR)
