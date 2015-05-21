@@ -19,12 +19,16 @@ abstract class SymbolReplacer {
     String replace() {
         while (symbolMatcher.find()) {
             String symbolName = symbolMatcher.group(1);
-            if (getSymbol(symbolName) != null && !alreadyReplaced.contains(symbolName)) {
-                alreadyReplaced.add(symbolName);
-                stringToReplace = stringToReplace.replace("$" + symbolName, getSymbol(symbolName));
-            }
+            replaceAllInstances(symbolName);
         }
         return stringToReplace;
+    }
+
+    private void replaceAllInstances(String symbolName) {
+        if (getSymbol(symbolName) != null && !alreadyReplaced.contains(symbolName)) {
+            alreadyReplaced.add(symbolName);
+            stringToReplace = stringToReplace.replace("$" + symbolName, getSymbol(symbolName));
+        }
     }
 
     abstract protected String getSymbol(String symbolName);
