@@ -40,3 +40,41 @@ abstract class SymbolReplacer {
     abstract protected String getSymbol(String symbolName);
 }
 ```
+
+### 2. 테스트 추가
+
+#### abstract method에 대한 구현체를 추가.
+
+```
+package abstract_till_you_drop;
+
+public class MyReplacer extends SymbolReplacer {
+    MyReplacer(String s) {
+        super(s);
+    }
+
+    @Override
+    protected String getSymbol(String symbolName) {
+        return "__";
+    }
+}
+```
+
+#### characterization test를 추가한다.
+
+```
+package abstract_till_you_drop;
+
+import org.junit.Test;
+
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
+
+public class SymbolReplacerTest {
+    @Test
+    public void foo() {
+        MyReplacer replacer = new MyReplacer("$ss aa $bb dd ff ss");
+        assertThat(replacer.replace(), is("xx"));
+    }
+}
+```
