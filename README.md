@@ -93,7 +93,7 @@ symbolPattern, symbolMatcher를 field로 추출
 ![](https://api.monosnap.com/rpc/file/download?id=V1h4JkqF7NA0qDFjHe8ZnlCakPqkxc)
 
 ### 5. Extract method: shouldReplaceSymbol
-![](https://api.monosnap.com/rpc/file/download?id=eWaR2s1CW2TtEFTUoAUw9Hig3mKP3lk)
+![](https://api.monosnap.com/rpc/file/download?id=rXgi4YvLF628KJOvZ8nZuuF1Oj4ank)
 
 ### 6. Extract method: replaceSymbol
 ![](https://api.monosnap.com/rpc/file/download?id=Tbe5Dj9XNloQ63G1QoSRtM9gl6653F)
@@ -103,3 +103,9 @@ symbolPattern, symbolMatcher를 field로 추출
 
 ### 8. Extract method: nextSymbol
 ![](https://api.monosnap.com/rpc/file/download?id=xSXM4NMkocCjKKRkNYLCvhMadFFAmy)
+
+### 9. Change inheritance to composition
+
+#### prepare
+SymbolTranslator 클래스를 생성
+![](https://api.monosnap.com/rpc/file/download?id=S74yJJcF0YxXnuPix8I2m4i6lFoirJ)

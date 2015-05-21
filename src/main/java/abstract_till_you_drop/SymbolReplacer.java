@@ -10,10 +10,12 @@ abstract class SymbolReplacer {
     protected List alreadyReplaced = new ArrayList();
     private Pattern symbolPattern = Pattern.compile("\\$([a-zA-Z]\\w*)");
     private Matcher symbolMatcher;
+    private SymbolTranslator symbolTranslator;
 
     SymbolReplacer(String s) {
         this.stringToReplace = s;
         this.symbolMatcher = symbolPattern.matcher(stringToReplace);
+        this.symbolTranslator = new SymbolTranslator();
     }
 
     String replace() {
