@@ -9,6 +9,6 @@ public class SymbolReplacerTest {
     @Test
     public void foo() {
         MyReplacer replacer = new MyReplacer("$ss aa $bb dd ff ss");
-        assertThat(replacer.replace(), is("xx"));
+        assertThat(replacer.replace(), is("__ aa __ dd ff ss"));
     }
 }

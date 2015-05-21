@@ -78,3 +78,7 @@ public class SymbolReplacerTest {
     }
 }
 ```
+
+#### make it pass
+테스트를 실행시켜서 시스템이 원하는 값을 알아내고 이를 이용하여 테스트를 성공시킨다. <- **characterization test**
+![](https://api.monosnap.com/rpc/file/download?id=cT5fuxvetaBk2Abf3HvafvJGdyJq6w)
