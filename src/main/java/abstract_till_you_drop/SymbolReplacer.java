@@ -49,5 +49,7 @@ abstract class SymbolReplacer {
                 !alreadyReplaced.contains(symbolName);
     }
 
-    abstract protected String getSymbol(String symbolName);
+    protected String getSymbol(String symbolName) {
+        return null;
+    }
 }
