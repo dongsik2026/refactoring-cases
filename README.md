@@ -82,3 +82,9 @@ public class SymbolReplacerTest {
 #### make it pass
 테스트를 실행시켜서 시스템이 원하는 값을 알아내고 이를 이용하여 테스트를 성공시킨다. <- **characterization test**
 ![](https://api.monosnap.com/rpc/file/download?id=cT5fuxvetaBk2Abf3HvafvJGdyJq6w)
+
+### 3. Prepare Extract Methods
+symbolPattern, symbolMatcher를 field로 추출
+큰 메소드를 작은 메소드를 extract하기 전의 사전 작업. 이 작업을 수행하면 extract method할 때 parameter로 전달할 필요가 없어진다.
+
+![](https://api.monosnap.com/rpc/file/download?id=7kt24mePKPJ9fu9FQ77CaccQO4hjoc)
