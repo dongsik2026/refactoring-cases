@@ -17,10 +17,8 @@ class SymbolReplacer {
 
     String replace() {
         for (String symbolName = symbolIterator.nextSymbol();
-             symbolName != null;
-             symbolName = symbolIterator.nextSymbol()) {
+             symbolName != null; symbolName = symbolIterator.nextSymbol())
             replaceAllInstances(symbolName);
-        }
         return stringToReplace;
     }
 

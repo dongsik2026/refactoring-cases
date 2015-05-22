@@ -161,3 +161,7 @@ SymbolTranslator의 translate 메소드로 이동하자.
 #### move method translate to SymbolTranslator
 ![](https://api.monosnap.com/rpc/file/download?id=a4fAXlikPacoHQtOi0gLZI8FfpULFY)
 ![](https://api.monosnap.com/rpc/file/download?id=JS8sjzA482XCmoTvR7vEygelfxm91s)
+
+#### refactoring
+symbolExpression는 더 이상 외부에서 호출되지 않으니 private으로 변경
+![](https://api.monosnap.com/rpc/file/download?id=3O1RfHccyiGWfLdmLdy5JnMr1YhslI)
