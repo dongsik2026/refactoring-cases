@@ -11,8 +11,8 @@ class SymbolReplacer {
 
     SymbolReplacer(String s, SymbolTranslator symbolTranslator) {
         this.stringToReplace = s;
-        SymbolIterator.symbolMatcher = SymbolIterator.symbolPattern.matcher(stringToReplace);
         this.symbolTranslator = symbolTranslator;
+        this.symbolIterator = new SymbolIterator(s);
     }
 
     String replace() {

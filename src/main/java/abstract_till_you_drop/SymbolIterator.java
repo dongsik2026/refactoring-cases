@@ -7,6 +7,10 @@ public class SymbolIterator {
     static Pattern symbolPattern = Pattern.compile("\\$([a-zA-Z]\\w*)");
     static Matcher symbolMatcher;
 
+    public SymbolIterator(String s) {
+        this.symbolMatcher = symbolPattern.matcher(s);
+    }
+
     String nextSymbol() {
         return symbolMatcher.find() ? symbolMatcher.group(1) : null;
     }
