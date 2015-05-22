@@ -31,6 +31,10 @@ class SymbolReplacer {
 
     private void replaceSymbol(String symbolName) {
         alreadyReplaced.add(symbolName);
+        translate(symbolName);
+    }
+
+    private void translate(String symbolName) {
         stringToReplace = stringToReplace.replace(
                 symbolTranslator.symbolExpression(symbolName),
                 symbolTranslator.getSymbol(symbolName)

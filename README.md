@@ -149,3 +149,11 @@ symbolMatcher, symbolPattern를 SymbolIterator로 이동시키기 위해 static�
 symbolExpression은 SymbolTranslator와 밀접한 관계를 갖는다. 따라서 SymbolTranslator로 이동시킨다.
 ![](https://api.monosnap.com/rpc/file/download?id=VQwQqXjWq8iBtx6XRCI0qoPCWyrdwh)
 ![](https://api.monosnap.com/rpc/file/download?id=MBixZzmIeXiJD63lVjvDN0hUoCxClM)
+
+### 13. Feature envy
+replaceSymbol은 symbolTranslator의 2개의 메소드를 호출한다. feature envy다.
+SymbolTranslator의 translate 메소드로 이동하자.
+
+#### prepare: extract method translate
+2개의 메소드 호출을 IDE의 기능으로 이동시킬 수 없다. 먼저 2개의 메소드 호출을 translate 함수로 추출한다.
+![](https://api.monosnap.com/rpc/file/download?id=idv1w2wJH3RTtlYrs2yvwQH1CnXdpd)
