@@ -132,3 +132,7 @@ symbolMatcher, symbolPattern를 SymbolIterator로 이동시키기 위해 static�
 ![](https://api.monosnap.com/rpc/file/download?id=nYftViESspAkTA4QCH6zb3EnJDAnHV)
 
 ![](https://api.monosnap.com/rpc/file/download?id=K3xlfy6YHRMm8rDYN9H6nPJBI2jTFH)
+
+#### move nextSymbol to SymbolIterator
+![](https://api.monosnap.com/rpc/file/download?id=nf6nwOPbIx74tH2ypED9IwrGQnVPiz)
+![](https://api.monosnap.com/rpc/file/download?id=7PMx0BO5qooDbbT3HmRjUDeqd8SwkP)

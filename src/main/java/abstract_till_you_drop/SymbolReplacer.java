@@ -16,16 +16,12 @@ class SymbolReplacer {
     }
 
     String replace() {
-        for (String symbolName = nextSymbol();
+        for (String symbolName = symbolIterator.nextSymbol();
              symbolName != null;
-             symbolName = nextSymbol()) {
+             symbolName = symbolIterator.nextSymbol()) {
             replaceAllInstances(symbolName);
         }
         return stringToReplace;
-    }
-
-    private String nextSymbol() {
-        return SymbolIterator.symbolMatcher.find() ? SymbolIterator.symbolMatcher.group(1) : null;
     }
 
     private void replaceAllInstances(String symbolName) {
