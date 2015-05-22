@@ -31,19 +31,11 @@ class SymbolReplacer {
 
     private void replaceSymbol(String symbolName) {
         alreadyReplaced.add(symbolName);
-        translate(symbolName);
-    }
-
-    private void translate(String symbolName) {
-        stringToReplace = stringToReplace.replace(
-                symbolTranslator.symbolExpression(symbolName),
-                symbolTranslator.getSymbol(symbolName)
-        );
+        symbolTranslator.translate(symbolName, this);
     }
 
     private boolean shouldReplaceSymbol(String symbolName) {
         return symbolTranslator.getSymbol(symbolName) != null &&
                 !alreadyReplaced.contains(symbolName);
     }
-
 }

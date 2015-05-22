@@ -157,3 +157,7 @@ SymbolTranslator의 translate 메소드로 이동하자.
 #### prepare: extract method translate
 2개의 메소드 호출을 IDE의 기능으로 이동시킬 수 없다. 먼저 2개의 메소드 호출을 translate 함수로 추출한다.
 ![](https://api.monosnap.com/rpc/file/download?id=idv1w2wJH3RTtlYrs2yvwQH1CnXdpd)
+
+#### move method translate to SymbolTranslator
+![](https://api.monosnap.com/rpc/file/download?id=a4fAXlikPacoHQtOi0gLZI8FfpULFY)
+![](https://api.monosnap.com/rpc/file/download?id=JS8sjzA482XCmoTvR7vEygelfxm91s)
