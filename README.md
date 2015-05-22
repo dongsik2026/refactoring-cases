@@ -145,3 +145,7 @@ symbolMatcher, symbolPattern를 SymbolIterator로 이동시키기 위해 static�
 가독성을 위해 아래와 같이 extract method를 수행
 ![](https://api.monosnap.com/rpc/file/download?id=dWHcZMuI2EGQ2uvoSsPekIWr7HZZDr)
 
+### 12. Move symbolExpression to SymbolTranslator
+symbolExpression은 SymbolTranslator와 밀접한 관계를 갖는다. 따라서 SymbolTranslator로 이동시킨다.
+![](https://api.monosnap.com/rpc/file/download?id=VQwQqXjWq8iBtx6XRCI0qoPCWyrdwh)
+![](https://api.monosnap.com/rpc/file/download?id=MBixZzmIeXiJD63lVjvDN0hUoCxClM)
