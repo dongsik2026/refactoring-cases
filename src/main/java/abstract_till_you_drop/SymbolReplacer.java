@@ -32,9 +32,13 @@ class SymbolReplacer {
     private void replaceSymbol(String symbolName) {
         alreadyReplaced.add(symbolName);
         stringToReplace = stringToReplace.replace(
-                "$" + symbolName,
+                symbolExpression(symbolName),
                 symbolTranslator.getSymbol(symbolName)
         );
+    }
+
+    private String symbolExpression(String symbolName) {
+        return "$" + symbolName;
     }
 
     private boolean shouldReplaceSymbol(String symbolName) {

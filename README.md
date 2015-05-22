@@ -140,3 +140,8 @@ symbolMatcher, symbolPattern를 SymbolIterator로 이동시키기 위해 static�
 #### make it work
 ![](https://api.monosnap.com/rpc/file/download?id=Zm2w59OnJQVlgfhSOugdNV3HB2I5uh)
 ![](https://api.monosnap.com/rpc/file/download?id=IEpviDg3hESnggiN6a8JeBbYurUTNo)
+
+### 11. Extract method - symbolExpression
+가독성을 위해 아래와 같이 extract method를 수행
+![](https://api.monosnap.com/rpc/file/download?id=dWHcZMuI2EGQ2uvoSsPekIWr7HZZDr)
+
