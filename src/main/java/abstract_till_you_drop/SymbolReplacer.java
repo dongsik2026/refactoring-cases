@@ -2,20 +2,16 @@ package abstract_till_you_drop;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 class SymbolReplacer {
     protected String stringToReplace;
     protected List alreadyReplaced = new ArrayList();
-    private static Pattern symbolPattern = Pattern.compile("\\$([a-zA-Z]\\w*)");
-    private static Matcher symbolMatcher;
     private SymbolTranslator symbolTranslator;
     private SymbolIterator symbolIterator;
 
     SymbolReplacer(String s, SymbolTranslator symbolTranslator) {
         this.stringToReplace = s;
-        this.symbolMatcher = symbolPattern.matcher(stringToReplace);
+        SymbolIterator.symbolMatcher = SymbolIterator.symbolPattern.matcher(stringToReplace);
         this.symbolTranslator = symbolTranslator;
     }
 
@@ -29,7 +25,7 @@ class SymbolReplacer {
     }
 
     private String nextSymbol() {
-        return symbolMatcher.find() ? symbolMatcher.group(1) : null;
+        return SymbolIterator.symbolMatcher.find() ? SymbolIterator.symbolMatcher.group(1) : null;
     }
 
     private void replaceAllInstances(String symbolName) {

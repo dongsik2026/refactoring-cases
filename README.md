@@ -124,4 +124,11 @@ SymbolTranslator 클래스를 생성
 #### prepare
 symbolMatcher, symbolPattern를 SymbolIterator로 이동시키기 위해 static으로 변경. 그래야 intellij에서 move 가능.
 
-![](https://api.monosnap.com/rpc/file/download?id=alsg0F7TqB8HHuRZ4nq2IdxjUjMi6J)
+![](https://api.monosnap.com/rpc/file/download?id=BROa3PK0RYpFKLHH0ySuLJnfLrPIr1)
+
+#### move members
+![](https://api.monosnap.com/rpc/file/download?id=iu4RX126OgGEyLjshlB22aBded237v)
+
+![](https://api.monosnap.com/rpc/file/download?id=nYftViESspAkTA4QCH6zb3EnJDAnHV)
+
+![](https://api.monosnap.com/rpc/file/download?id=K3xlfy6YHRMm8rDYN9H6nPJBI2jTFH)
