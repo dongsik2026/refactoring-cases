@@ -115,3 +115,13 @@ SymbolTranslator 클래스를 생성
 ![](https://api.monosnap.com/rpc/file/download?id=Wwb3LBU1mL1F5FvDPzBd6KHNvbB6Uj)
 ![](https://api.monosnap.com/rpc/file/download?id=D6XWjWjWc7IXOL4Rhq7sJUlN0vH4kL)
 ![](https://api.monosnap.com/rpc/file/download?id=Tv94ScsSeZLbJiHUjRRn4jKCEFuHaR)
+
+### 10. Extract class - SymbolIterator
+- symbolMatcher, symbolPattern는 nextSymbol에서만 사용됨.
+- 다른 속성들보다 보다 응집도가 높거나 밀접하게 관계된 2개 이상의 속성들이 존재하는 경우가 있다.
+- 이런 속성들을 별도의 클래스로 추출하면 가독성이 좋아진다.
+
+#### prepare
+symbolMatcher, symbolPattern를 SymbolIterator로 이동시키기 위해 static으로 변경. 그래야 intellij에서 move 가능.
+
+![](https://api.monosnap.com/rpc/file/download?id=alsg0F7TqB8HHuRZ4nq2IdxjUjMi6J)

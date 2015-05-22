@@ -8,9 +8,10 @@ import java.util.regex.Pattern;
 class SymbolReplacer {
     protected String stringToReplace;
     protected List alreadyReplaced = new ArrayList();
-    private Pattern symbolPattern = Pattern.compile("\\$([a-zA-Z]\\w*)");
-    private Matcher symbolMatcher;
+    private static Pattern symbolPattern = Pattern.compile("\\$([a-zA-Z]\\w*)");
+    private static Matcher symbolMatcher;
     private SymbolTranslator symbolTranslator;
+    private SymbolIterator symbolIterator;
 
     SymbolReplacer(String s, SymbolTranslator symbolTranslator) {
         this.stringToReplace = s;
